@@ -19,15 +19,10 @@ public class User {
     private Byte age;
 
     public User() {
-
+        // Пустой конструктор (требуется для Hibernate/JPA)
     }
 
-    public User(String name, String lastName, Byte age) {
-        this.name = name;
-        this.lastName = lastName;
-        this.age = age;
-    }
-
+    // Геттеры и сеттеры
     public Long getId() {
         return id;
     }
@@ -58,5 +53,16 @@ public class User {
 
     public void setAge(Byte age) {
         this.age = age;
+    }
+
+    // Метод для вывода информации о пользователе
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", age=" + age +
+                '}';
     }
 }
