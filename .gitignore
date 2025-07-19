@@ -1,0 +1,38 @@
+### Java ###
+*.class
+*.log
+*.ctxt
+*.jar
+*.war
+*.ear
+*.nar
+*.tmp
+
+### Maven ###
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+### IntelliJ IDEA ###
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+.idea_modules/
+
+### Eclipse ###
+.settings/
+.classpath
+.project
+bin/
+
+### Mac ###
+.DS_Store
+
+### Database ###
+*.db
+*.sql
