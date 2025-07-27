@@ -4,29 +4,38 @@ import javax.persistence.Column;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import java.util.Objects;
+import javax.persistence.*;
 
-@Table
+@Entity
+@Table(name = "users")
 public class User {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column
+    @Column(name = "name")
     private String name;
 
-    @Column
+    @Column(name = "lastName")
     private String lastName;
 
-    @Column
+    @Column(name = "age")
     private Byte age;
 
     public User() {
         // Пустой конструктор (требуется для Hibernate/JPA)
     }
 
-    // Геттеры и сеттеры
-    public Long getId() {
-        return id;
+    public User(String name, String lastName, byte age) {
+        this.name = name;
+        this.lastName = lastName;
+        this.age = age; // Инициализируем все поля!
     }
+
+    // Геттеры и сеттеры
+
+
+    public Long getId() { return id; }
 
     public void setId(Long id) {
         this.id = id;
