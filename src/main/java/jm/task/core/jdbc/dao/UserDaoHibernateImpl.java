@@ -5,7 +5,6 @@ import org.hibernate.Session;
 import org.hibernate.Transaction;
 import util.Util;
 
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 

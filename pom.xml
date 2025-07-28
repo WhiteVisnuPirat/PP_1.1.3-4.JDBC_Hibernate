@@ -37,7 +37,6 @@
             <version>42.6.0</version> <!-- Более новая версия -->
         </dependency>
 
-
          <dependency>
              <groupId>junit</groupId>
              <artifactId>junit</artifactId>

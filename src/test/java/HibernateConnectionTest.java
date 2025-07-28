@@ -4,9 +4,11 @@ import jm.task.core.jdbc.model.User;
 import org.junit.Test;
 
 import java.util.List;
-import java.util.Optional;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.fail;
 
 public class HibernateConnectionTest {
     private final UserDao userDao = new UserDaoHibernateImpl();
