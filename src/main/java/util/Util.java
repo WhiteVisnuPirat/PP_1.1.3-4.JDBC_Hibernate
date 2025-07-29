@@ -9,19 +9,6 @@ import org.hibernate.cfg.Environment;
 import java.util.Properties;
 
 public class Util {
-    private static final String URL = "jdbc:mysql://localhost:3306/my_users_db";
-    private static final String USERNAME = "root";
-    private static final String PASSWORD = "020684Dkfl!";
-    private static final String DRIVER = "com.mysql.cj.jdbc.Driver";
-
-    // Загружаем драйвер MySQL при старте класса
-    static {
-        try {
-            Class.forName(DRIVER);
-        } catch (ClassNotFoundException e) {
-            throw new RuntimeException("Не удалось загрузить драйвер MySQL", e);
-        }
-    }
 
     private static final SessionFactory sessionFactory;
 
